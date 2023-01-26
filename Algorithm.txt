@@ -1,0 +1,32 @@
+Algorithm str
+   variable
+	numchar:=0;
+	Wordstr:=0;
+	numvoyel:=0;
+   Begin
+   while(str[numchar]!="."){
+   	numchar=numchar+1;
+	if(str[numchar]==" "){
+	  wordstr=wordstr+1;
+	}
+	switch(str[numchar]==" "){
+	  case a:
+		numvoyel=numvoyel+1;
+	  	break;
+	  case e:
+		numvoyel=numvoyel+1;
+	  	break;
+	  case i:
+		numvoyel=numvoyel+1;
+	  	break;
+	  case o:
+		numvoyel=numvoyel+1;
+	  	break;
+	  case u:
+		numvoyel=numvoyel+1;
+	  	break;
+	  case y:
+		numvoyel=numvoyel+1;
+	  	break;
+	End_switch
+     }
