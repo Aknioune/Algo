@@ -1,14 +1,19 @@
 Algorithm str
    variable
+	numchar  integer;
+	Wordstr  integer;
+	numvoyel integer;;
+	
+   Begin
 	numchar:=0;
 	Wordstr:=0;
 	numvoyel:=0;
-   Begin
    while(str[numchar]!="."){
    	numchar=numchar+1;
 	if(str[numchar]==" "){
 	  wordstr=wordstr+1;
 	}
+	End_if
 	switch(str[numchar]==" "){
 	  case a:
 		numvoyel=numvoyel+1;
@@ -29,4 +34,7 @@ Algorithm str
 		numvoyel=numvoyel+1;
 	  	break;
 	End_switch
+    End_while
+numchar=numchar+1;
      }
+End
