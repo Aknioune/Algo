@@ -2,39 +2,54 @@ Algorithm str
    variable
 	numchar  integer;
 	Wordstr  integer;
-	numvoyel integer;;
+	numvoyel integer;
+	str String;
 	
    Begin
 	numchar:=0;
 	Wordstr:=0;
 	numvoyel:=0;
-   while(str[numchar]!="."){
-   	numchar=numchar+1;
+	Read(str);
+   while(str[numchar]<>"."){
+   	
 	if(str[numchar]==" "){
 	  wordstr=wordstr+1;
 	}
 	End_if
 	switch(str[numchar]==" "){
-	  case a:
-		numvoyel=numvoyel+1;
-	  	break;
-	  case e:
-		numvoyel=numvoyel+1;
-	  	break;
-	  case i:
-		numvoyel=numvoyel+1;
-	  	break;
-	  case o:
-		numvoyel=numvoyel+1;
-	  	break;
-	  case u:
-		numvoyel=numvoyel+1;
-	  	break;
-	  case y:
+	  case "a":
+		
+	  case "e":
+		
+	  case "i":
+		
+	  case "o":
+		
+	  case "u":
+		
+	  case "y":
+		
+	  case "A":
+		
+	  case "E":
+		
+	  case "I":
+		
+	  case "O":
+		
+	  case "U":
+		
+	  case "Y":
 		numvoyel=numvoyel+1;
 	  	break;
 	End_switch
+	numchar=numchar+1;
     End_while
-numchar=numchar+1;
+	numchar=numchar+1;
      }
+write("length of the sentence: ",numchar); 
+write("Number of words: ",Wordstr); 
+write("number of vowels: ",numvoyel); 
+
 End
+
